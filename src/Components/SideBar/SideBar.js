@@ -23,8 +23,9 @@ const SideBar = ({ sidebar, showsideBar }) => {
         <div style={{ position: "relative" }}>
           <span
             style={{
-              position: "",
-              bottom: 0,
+              position: "fixed",
+              bottom: 15,
+              right: 20,
               fontSize: 10,
             }}
           >

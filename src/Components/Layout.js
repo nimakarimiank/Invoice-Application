@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Stack } from "react-bootstrap";
 import AppHeader from "./AppHeader/AppHeader";
 import AppContent from "./AppContent/AppContent";
