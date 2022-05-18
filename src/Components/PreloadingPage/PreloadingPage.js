@@ -1,11 +1,11 @@
 import "./preloading.css";
-import { LoaderContext } from "../../Contexts/LoaderContext";
-import { useContext } from "react";
+// import { LoaderContext } from "../../Contexts/LoaderContext";
+// import { useContext } from "react";
 const PreloadingPage = () => {
-  const { setLoad, load } = useContext(LoaderContext);
+  // const { setLoad, load } = useContext(LoaderContext);
 
   setTimeout(() => {
-    setLoad(!load);
+    // setLoad(!load);
   }, 5000);
   return (
     <>

@@ -149,7 +149,7 @@ body {
 /* ag grid css */
 .agRowStyle,.agHeaderStyle
 {
-    font-family: "Vazir";
+    font-family: "Vazir" !important;
 }
 .ag-theme-alpine .ag-paging-panel,.ag-header
 {

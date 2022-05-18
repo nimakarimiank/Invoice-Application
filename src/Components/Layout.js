@@ -6,6 +6,7 @@ import SideBar from "./SideBar/SideBar";
 import React, { useContext } from "react";
 import PreloadingPage from "./PreloadingPage/PreloadingPage";
 import { LoaderContext } from "../Contexts/LoaderContext";
+// import AppFooter from "./AppFooter/AppFooter";
 
 const Layout = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -25,7 +26,7 @@ const Layout = () => {
           >
             <AppHeader showsideBar={sidebarExpanded} />
             <AppContent />
-            {/* AppFooter To Be Inserted */}
+            {/* <AppFooter/> */}
           </Stack>
           <SideBar sidebar={sidebar} showsideBar={sidebarExpanded} />
 

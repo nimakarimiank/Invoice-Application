@@ -1,4 +1,5 @@
 import { Offcanvas } from "react-bootstrap";
+import MenuContextProvider from "../../Contexts/MenuContext.js";
 
 import Menu from "./Menu.js";
 
@@ -8,9 +9,9 @@ const SideBar = ({ sidebar, showsideBar }) => {
       {" "}
       <Offcanvas
         backdrop={false}
-        scroll={true}
         show={sidebar}
         placement="start"
+        scroll={true}
         onHide={showsideBar}
       >
         <Offcanvas.Header closeButton={true} closeVariant="white">
@@ -18,7 +19,10 @@ const SideBar = ({ sidebar, showsideBar }) => {
         </Offcanvas.Header>
         <Offcanvas.Title></Offcanvas.Title>
         <Offcanvas.Body>
-          <Menu></Menu>
+          <MenuContextProvider>
+            {" "}
+            <Menu></Menu>
+          </MenuContextProvider>
         </Offcanvas.Body>
         <div style={{ position: "relative" }}>
           <span
